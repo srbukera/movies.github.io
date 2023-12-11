@@ -34,7 +34,8 @@ h1{
 
 }
 img{
-    width: 150px;
+    width: 140px;
+  
     margin-left: 10px;
     margin-right: 20px;
 }
@@ -46,8 +47,11 @@ a{
 
 #movieslist{
    background-color: rgb(0, 0, 0);
-   width: 90%;
-   display: flex;
+   width: 35%;
+   align-items: center;
+ margin-left: 10%;
+ margin-top: 5%;
+   
     flex-wrap: wrap;
 
   
@@ -59,7 +63,7 @@ a{
     
 }
 #search{
-    width: 40vh;
+    width: 35vh;
     margin-left: 20px;
 }
 button{
@@ -67,10 +71,11 @@ button{
     background-color: brown;
     border-radius: 30%;
     width: 15vh;
+  
 }
 #main{
     gap: 20px;
-    padding-left: 60px;
+    
     padding-right: -20px;
     justify-content: center;
     align-items: center;
