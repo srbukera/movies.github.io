@@ -1,6 +1,11 @@
 const movi = [
 
- // { dow: "download 720p ", title: "leo full movies in hindi hd ", link: "https://ww4.filesdl.in/view/tOR5vJXkDg", image: "ba" },
+{ dow: "download 720p ", title: "Thor love and thunder  full movies in hindi hd ", link: "https://linkmake.in/view/2GIuaZhduk", image: "../images1/thor.gif" },
+{ dow: "download 720p ", title: "Blue beetle full movies in hindi hd ", link: "   https://linkmake.in/view/LbjZJFBHUN", image: "../images1/Blue-Beetle.gif" },
+ 
+ { dow: "download 720p ", title: "  Extraction-2 full movies in hindi hd ", link: "https://linkmake.in/view/teEcc9jmYi ", image: "../images1/Extraction.gif" },
+  { dow: "download 720p ", title: "kolai  full movies in hindi hd ", link: "https://linkmake.in/view/AUTNYUiAIk", image: "../images1/kolai.gif" },
+ { dow: "download 720p ", title: "japan full movies in hindi hd ", link: "", image: "../images1/japan.gif" },
   { dow: "download 720p ", title: "animal full movie hindi hd 720p", link: "https://www1.fastxyz.in/file.php?id=bGkxMzVsaDQzcjhqN2R6", image: "../images/animal.jpeg" },
   { dow: "download 720p ", title: "Bahubali 2 full movies in hindi hd ", link: "  https://linkmake.in/view/57NJc1qUEc  ", image: "../imagess/bahubali2.jpeg" },
   { dow: "download 720p ", title: "Brahamastra hd full movies in hindi hd ", link: "", image: "../imagess/brahmastra.jpeg" },
@@ -75,7 +80,7 @@ const movi = [
 
 var currentpage=1;
 function loadpage(page) {
-  var moviperpage = 6;
+  var moviperpage = 20;
   const startind = (page - 1) * moviperpage;
   const endind = startind + moviperpage;
   const moviesdisplay = movi.slice(startind, endind);
@@ -96,11 +101,16 @@ function add(movi) {
   movi.forEach(movi => {
     const image = document.createElement("img")
     const link = document.createElement("a")
-    const list = document.createElement("h4")
+    const list = document.createElement("div")
     const p = document.createElement("h1")
-    p.style.fontSize = "20px"
+    p.style.fontSize = "12px"
     link.style.backgroundColor = "green"
-
+    link.style.height = "19px"
+    link.style.margin = "5px 4px"
+    list.style.display="flex"
+    list.style.alignItems="center"
+    list.style.marginBottom="6px"
+    list.style.border=" solid white 0.1px"
     image.src = movi.image
     link.href = movi.link
     link.textContent = movi.dow
